@@ -1,0 +1,6 @@
+[
+  { "id": "cheese", "name": "起司", "look": { "kind": "cheese", "color": "yolk", "face": "smile" } },
+  { "id": "saltedegg", "name": "鹹蛋黃", "look": { "kind": "saltedegg", "color": "yolk", "face": "sleepy" } },
+  { "id": "chili", "name": "辣椒", "look": { "kind": "chili", "color": "chili", "face": "open" } },
+  { "id": "braisedpork", "name": "滷肉", "look": { "kind": "braisedpork", "color": "caramel", "face": "smile" } }
+]

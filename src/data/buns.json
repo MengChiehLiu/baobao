@@ -1,0 +1,157 @@
+[
+  {
+    "id": "charsiu", "name": "叉燒包", "source": "base", "rarity": "base",
+    "desc": "朝最前面的敵人丟肉丸子",
+    "cost": 60, "cardCooldown": 3, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 18, "interval": 1.0, "range": 150 }],
+    "look": { "body": "round", "pleats": 0, "top": "crack", "color": "dough", "filling": "caramel", "topping": "none", "face": "smile" }
+  },
+  {
+    "id": "mantou", "name": "白饅頭", "source": "base", "rarity": "base", "onPath": true,
+    "desc": "放在路上擋住敵人，讓牠們停下來啃",
+    "cost": 50, "cardCooldown": 12, "hp": 500,
+    "effects": [{ "type": "block" }],
+    "look": { "body": "square", "pleats": 0, "top": "none", "color": "dough", "filling": null, "topping": "none", "face": "sleepy" }
+  },
+  {
+    "id": "xiaolong", "name": "小籠包", "source": "base", "rarity": "base",
+    "desc": "噴出熱湯，燙到一整群",
+    "cost": 110, "cardCooldown": 5, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 12, "interval": 1.6, "range": 140,
+      "onHit": [{ "type": "splash", "radius": 55, "damage": 16 }] }],
+    "look": { "body": "round", "pleats": 10, "top": "twist", "color": "dough", "filling": null, "topping": "none", "face": "open" }
+  },
+  {
+    "id": "sesame", "name": "芝麻包", "source": "gacha", "rarity": "common",
+    "desc": "噠噠噠！超快速連射芝麻粒",
+    "cost": 90, "cardCooldown": 5, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 6, "interval": 0.3, "range": 130 }],
+    "look": { "body": "round", "pleats": 0, "top": "none", "color": "charcoal", "filling": null, "topping": "seeds", "face": "open" }
+  },
+  {
+    "id": "liusha", "name": "流沙包", "source": "gacha", "rarity": "common",
+    "desc": "爆漿！路上留下黏黏的蛋黃，敵人走過會變慢",
+    "cost": 90, "cardCooldown": 5, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 8, "interval": 1.6, "range": 140,
+      "onHit": [{ "type": "puddle", "length": 70, "duration": 2.5, "slow": 0.5 }] }],
+    "look": { "body": "round", "pleats": 0, "top": "dot", "color": "dough", "filling": "yolk", "topping": "none", "face": "smile" }
+  },
+  {
+    "id": "veggie", "name": "菜包", "source": "gacha", "rarity": "common",
+    "desc": "丟菜葉攻擊，還會慢慢修好櫃台（回復愛心）",
+    "cost": 80, "cardCooldown": 8, "hp": 100,
+    "effects": [
+      { "type": "shoot", "damage": 6, "interval": 1.5, "range": 120 },
+      { "type": "healShop", "amount": 1, "interval": 20 }
+    ],
+    "look": { "body": "oval", "pleats": 6, "top": "twist", "color": "matcha", "filling": null, "topping": "leaf", "face": "smile" }
+  },
+  {
+    "id": "taro", "name": "芋頭包", "source": "gacha", "rarity": "common",
+    "desc": "紫色狙擊手，射很遠，專打最肥的敵人",
+    "cost": 120, "cardCooldown": 6, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 60, "interval": 2.6, "range": 260, "target": "strong" }],
+    "look": { "body": "oval", "pleats": 0, "top": "dot", "color": "taro", "filling": null, "topping": "sesame", "face": "cool" }
+  },
+  {
+    "id": "brownsugar", "name": "黑糖饅頭", "source": "gacha", "rarity": "common", "onPath": true,
+    "desc": "比白饅頭更硬的路障，咬它的敵人會被燙到",
+    "cost": 80, "cardCooldown": 14, "hp": 900,
+    "effects": [{ "type": "block", "thorns": 10 }],
+    "look": { "body": "square", "pleats": 0, "top": "none", "color": "caramel", "filling": null, "topping": "none", "face": "cool" }
+  },
+  {
+    "id": "steamer", "name": "小蒸籠", "source": "gacha", "rarity": "common",
+    "desc": "不會攻擊，但會一直冒出蒸氣值",
+    "cost": 70, "cardCooldown": 6, "hp": 100,
+    "effects": [{ "type": "produce", "amount": 15, "interval": 6 }],
+    "look": { "body": "basket", "pleats": 0, "top": "none", "color": "wood", "filling": null, "topping": "none", "face": "sleepy" }
+  },
+  {
+    "id": "redbean", "name": "豆沙包", "source": "gacha", "rarity": "common",
+    "desc": "黏黏的紅豆，打到的敵人會變慢",
+    "cost": 90, "cardCooldown": 5, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 10, "interval": 1.2, "range": 150,
+      "onHit": [{ "type": "slowHit", "mul": 0.6, "duration": 2 }] }],
+    "look": { "body": "round", "pleats": 0, "top": "dot", "color": "sakura", "filling": "chili", "topping": "none", "face": "wink" }
+  },
+  {
+    "id": "guabao", "name": "刈包", "source": "gacha", "rarity": "rare",
+    "desc": "啊嗚！咬住敵人不放。只咬得到旁邊一格，要放在路邊",
+    "cost": 130, "cardCooldown": 8, "hp": 150,
+    "effects": [{ "type": "clamp", "range": 120, "duration": 2.5, "dps": 55, "interval": 3 }],
+    "look": { "body": "folded", "pleats": 0, "top": "none", "color": "dough", "filling": "caramel", "topping": "leaf", "face": "open" }
+  },
+  {
+    "id": "panfried", "name": "水煎包", "source": "gacha", "rarity": "rare",
+    "desc": "滋滋滋！往路上潑熱油，燙傷經過的敵人",
+    "cost": 140, "cardCooldown": 8, "hp": 100,
+    "effects": [{ "type": "oil", "range": 170, "length": 80, "duration": 3, "dps": 22, "interval": 4.5 }],
+    "look": { "body": "pan", "pleats": 8, "top": "twist", "color": "dough", "filling": null, "topping": "scallion", "face": "smile" }
+  },
+  {
+    "id": "custard", "name": "奶黃包", "source": "gacha", "rarity": "rare",
+    "desc": "幫旁邊 8 格的包子加油，攻擊變快",
+    "cost": 100, "cardCooldown": 8, "hp": 100,
+    "effects": [{ "type": "buff", "mul": 0.7 }],
+    "look": { "body": "round", "pleats": 0, "top": "dot", "color": "yolk", "filling": "caramel", "topping": "bow", "face": "wink" }
+  },
+  {
+    "id": "boba", "name": "珍奶包", "source": "gacha", "rarity": "rare",
+    "desc": "射出會彈來彈去的珍珠，一次打好幾隻",
+    "cost": 140, "cardCooldown": 6, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 20, "interval": 1.3, "range": 160,
+      "onHit": [{ "type": "chain", "bounces": 3, "range": 110, "falloff": 0.75 }] }],
+    "look": { "body": "tall", "pleats": 0, "top": "none", "color": "caramel", "filling": null, "topping": "pearls", "face": "open" }
+  },
+  {
+    "id": "charcoal", "name": "竹炭包", "source": "gacha", "rarity": "rare",
+    "desc": "黑黑的大爆炸，範圍超大",
+    "cost": 150, "cardCooldown": 7, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 14, "interval": 1.8, "range": 150,
+      "onHit": [{ "type": "splash", "radius": 95, "damage": 22 }] }],
+    "look": { "body": "round", "pleats": 10, "top": "twist", "color": "charcoal", "filling": null, "topping": "none", "face": "cool" }
+  },
+  {
+    "id": "durian", "name": "榴槤包", "source": "gacha", "rarity": "super",
+    "desc": "噗～超臭！附近的敵人會嚇得往回走",
+    "cost": 160, "cardCooldown": 10, "hp": 120,
+    "effects": [{ "type": "repel", "range": 140, "interval": 6, "duration": 1.8, "damage": 45 }],
+    "look": { "body": "spiky", "pleats": 0, "top": "none", "color": "yolk", "filling": null, "topping": "none", "face": "wink" }
+  },
+  {
+    "id": "mochi", "name": "麻糬包", "source": "gacha", "rarity": "super",
+    "desc": "QQ 黏黏！把附近的敵人全部黏在原地",
+    "cost": 160, "cardCooldown": 10, "hp": 120,
+    "effects": [{ "type": "freeze", "range": 150, "interval": 6, "duration": 2, "damage": 35 }],
+    "look": { "body": "flat", "pleats": 0, "top": "none", "color": "cream", "filling": null, "topping": "cream", "face": "sleepy" }
+  },
+  {
+    "id": "pepper", "name": "胡椒餅", "source": "gacha", "rarity": "super",
+    "desc": "蓄力……砰！對最肥的敵人來一記大爆炸",
+    "cost": 180, "cardCooldown": 10, "hp": 120,
+    "effects": [{ "type": "burst", "range": 220, "interval": 3.5, "damage": 220, "radius": 80 }],
+    "look": { "body": "round", "pleats": 0, "top": "crack", "color": "caramel", "filling": "chili", "topping": "sesame", "face": "cool" }
+  },
+  {
+    "id": "cheeseliusha", "name": "起司流沙小籠包", "source": "fusion", "rarity": "fusion",
+    "desc": "噴湯又爆漿，燙傷加減速",
+    "hint": "會牽絲的 + 會爆漿的",
+    "cost": 170, "cardCooldown": 7, "hp": 100,
+    "effects": [{ "type": "shoot", "damage": 14, "interval": 1.6, "range": 150,
+      "onHit": [
+        { "type": "splash", "radius": 60, "damage": 16 },
+        { "type": "puddle", "length": 80, "duration": 2.5, "slow": 0.5 }
+      ] }],
+    "look": { "body": "round", "pleats": 10, "top": "twist", "color": "yolk", "filling": "yolk", "topping": "cheese", "face": "open" }
+  },
+  {
+    "id": "chiliguabao", "name": "辣椒刈包", "source": "fusion", "rarity": "fusion",
+    "desc": "咬得更痛，放開時還會辣到旁邊。只咬得到旁邊一格，要放在路邊",
+    "hint": "辣辣的 + 滷得香香的",
+    "cost": 170, "cardCooldown": 8, "hp": 150,
+    "effects": [{ "type": "clamp", "range": 110, "duration": 3, "dps": 55, "interval": 3.5,
+      "onRelease": [{ "type": "splash", "radius": 70, "damage": 50 }] }],
+    "look": { "body": "folded", "pleats": 0, "top": "none", "color": "dough", "filling": "chili", "topping": "chili", "face": "open" }
+  }
+]

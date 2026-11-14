@@ -1,0 +1,4 @@
+[
+  { "inputs": ["cheese", "saltedegg"], "result": "cheeseliusha" },
+  { "inputs": ["chili", "braisedpork"], "result": "chiliguabao" }
+]
